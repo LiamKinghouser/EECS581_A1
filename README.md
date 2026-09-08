@@ -1,10 +1,10 @@
 # EECS581_A1
 
-- AI Model used: Gemini 3.7 Flash High
+**AI Model used:** Gemini 3.7 Flash High
 
-- Dates consulted: 9/8/2026
+**Dates consulted:** 9/8/2026
 
-- Initial prompt:
+**Initial prompt:**
 
 Write a C program in /Users/kinghouser/Desktop/CodingProjects/EECSProjects/EECS581_A1 that reads a line of text and extracts a single valid IPv4 address (optionally followed by a port number) embedded anywhere in the input.
 
@@ -18,7 +18,7 @@ Rules: Do not use string-to-number conversion functions (such as atoi, atol, ato
 
 Program requirements: In main, continuously prompt the user for input lines until the user enters END (case-sensitive), at which point print "Program terminated." and exit. For each line, call extractIPv4 and, if valid, print: Extracted IPv4 address: A.B.C.D (decimal value: N, port: P) where N is the 32-bit decimal value and P is the port number or the literal text "none".
 
-- Fix #1 prompt:
+**Fix #1 prompt**:
 
 the program should prompt the user with messages for the inputs. below is a sample run of how it should look.
 
@@ -45,7 +45,7 @@ Sample run:
 - Enter a string (or 'END' to quit): END
 - Program terminated.
 
-- Test cases (all test cases passed):
+**Test cases (all test cases passed):**
 
 All of the provided test cases, as well as the following:
 
@@ -76,6 +76,6 @@ All of the provided test cases, as well as the following:
 - failed:::192.168.1.1 but good 172.16.1.1:443
 
 
-- Verification statement:
+**Verification statement:**
 
 I understand every line of the code in this project. The code has been fully tested and works as intended. The code has no known bugs or limitations.
