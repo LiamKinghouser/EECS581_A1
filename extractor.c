@@ -1,11 +1,6 @@
 /*
  * EECS581_A1: IPv4 Address Extractor
- *
- * Description:
- * Extracts a single valid IPv4 address (optionally followed by a port number)
- * embedded anywhere in an input string. Parsing, validation, and digit accumulations
- * are performed manually character-by-character without string-to-number or IP
- * library functions.
+
  * All of this code was written by AI (Gemini)
  */
 
