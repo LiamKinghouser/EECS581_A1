@@ -24,56 +24,57 @@ the program should prompt the user with messages for the inputs. below is a samp
 
 Sample run:
 
-Enter a string (or 'END' to quit): connecting to 192.168.1.1 now
-Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
-Enter a string (or 'END' to quit): server=10.0.0.255:8080end
-Extracted IPv4 address: 10.0.0.255 (decimal value: 167772415, port: 8080)
-Enter a string (or 'END' to quit): 192a168.1.1.1
-Extracted IPv4 address: 168.1.1.1 (decimal value: 2818638081, port: none)
-Enter a string (or 'END' to quit): 192.168.1.1.
-Invalid input: no valid IPv4 address found
-Enter a string (or 'END' to quit): Connection from 192.168.1.1 refused
-Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
-Enter a string (or 'END' to quit): 192.168.01.1
-Invalid input: no valid IPv4 address found
-Enter a string (or 'END' to quit): 1.2.3.4:99999
-Invalid input: no valid IPv4 address found
-Enter a string (or 'END' to quit): 12.34.56
-Invalid input: no valid IPv4 address found
-Enter a string (or 'END' to quit): no number here
-Invalid input: no valid IPv4 address found
-Enter a string (or 'END' to quit): END
-Program terminated.
+- Enter a string (or 'END' to quit): connecting to 192.168.1.1 now
+- Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+- Enter a string (or 'END' to quit): server=10.0.0.255:8080end
+- Extracted IPv4 address: 10.0.0.255 (decimal value: 167772415, port: 8080)
+- Enter a string (or 'END' to quit): 192a168.1.1.1
+- Extracted IPv4 address: 168.1.1.1 (decimal value: 2818638081, port: none)
+- Enter a string (or 'END' to quit): 192.168.1.1.
+- Invalid input: no valid IPv4 address found
+- Enter a string (or 'END' to quit): Connection from 192.168.1.1 refused
+- Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+- Enter a string (or 'END' to quit): 192.168.01.1
+- Invalid input: no valid IPv4 address found
+- Enter a string (or 'END' to quit): 1.2.3.4:99999
+- Invalid input: no valid IPv4 address found
+- Enter a string (or 'END' to quit): 12.34.56
+- Invalid input: no valid IPv4 address found
+- Enter a string (or 'END' to quit): no number here
+- Invalid input: no valid IPv4 address found
+- Enter a string (or 'END' to quit): END
+- Program terminated.
 
 - Test cases (all test cases passed):
 
 All of the provided test cases, as well as the following:
 
-1.2.3.4:0
-1.2.3.4:65535
-1.2.3.4:65536
-1.2.3.4:080
-1.2.3.4:00
-0.0.0.0:0
-255.255.255.255:65535
-256.0.0.1
-10.256.0.1
-192.168.0.01
-1234.1.1.1
-1.2.3.4:100000
-1.2.3.4.5
-1.2.3.4:
-1.2.3.4::80
-1.2.3.4:80:90
-1.2.3.4.:80
-1.2.3.4:80.
-.1.2.3.4
-1..2.3.4
-http://192.168.1.1:80/index.html
-ftp://user:pass@10.0.0.1:21/files
-Primary 192.168.1.1 and backup 10.0.0.1:80
-Bad 1.2.3.4.5 but good 172.16.1.1:443
-failed:::192.168.1.1 but good 172.16.1.1:443
+- 1.2.3.4:0
+- 1.2.3.4:65535
+- 1.2.3.4:65536
+- 1.2.3.4:080
+- 1.2.3.4:00
+- 0.0.0.0:0
+- 255.255.255.255:65535
+- 256.0.0.1
+- 10.256.0.1
+- 192.168.0.01
+- 1234.1.1.1
+- 1.2.3.4:100000
+- 1.2.3.4.5
+- 1.2.3.4:
+- 1.2.3.4::80
+- 1.2.3.4:80:90
+- 1.2.3.4.:80
+- 1.2.3.4:80.
+- .1.2.3.4
+- 1..2.3.4
+- http://192.168.1.1:80/index.html
+- ftp://user:pass@10.0.0.1:21/files
+- Primary 192.168.1.1 and backup 10.0.0.1:80
+- Bad 1.2.3.4.5 but good 172.16.1.1:443
+- failed:::192.168.1.1 but good 172.16.1.1:443
+
 
 - Verification statement:
 
